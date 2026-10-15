@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="کالینو">
+  <rect width="512" height="512" rx="108" fill="#121012"/>
+  <rect x="22" y="22" width="468" height="468" rx="92" fill="none" stroke="#7A1E3A" stroke-width="6"/>
+  <text x="256" y="263" text-anchor="middle" dominant-baseline="middle" direction="rtl" font-family="Vazirmatn,Tahoma,DejaVu Sans,sans-serif" font-size="100" font-weight="bold" fill="#EAE0D2">کالینو</text>
+</svg>
