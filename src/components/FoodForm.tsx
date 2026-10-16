@@ -119,7 +119,7 @@ export function FoodForm({ foods, initial, onSave, onCancel }: {
     <PageTitle eyebrow="کتابخانهٔ شخصی" title={initial ? "ویرایش غذا" : "غذای جدید"} description="اطلاعات هر وعده رو یک بار ثبت کن و هر زمان خواستی ازش استفاده کن." />
     <div className="editor-card">
       <div className="segmented" role="group" aria-label="نوع غذا"><button type="button" className={kind === "food" ? "selected" : ""} onClick={() => { setKind("food"); setError(""); }}>غذای ساده</button>
-        <button type="button" className={kind === "recipe" ? "selected" : ""} onClick={() => { setKind("recipe"); if (!initial) { setUnit("واحد سفارشی"); setServingSize("1"); } setError(""); }}>دستور غذا</button></div>
+        <button type="button" className={kind === "recipe" ? "selected" : ""} onClick={() => { setKind("recipe"); if (!initial) { setUnit("قاشق"); setServingSize("1"); } setError(""); }}>دستور غذا</button></div>
       <div className="form-grid">
         <LabeledInput label="نام غذا" value={name} onChange={setName} placeholder={kind === "recipe" ? "مثلاً بشقاب مرغ و برنج" : "مثلاً برنج پخته"} required maxLength={110} />
         <div className="field"><label className="field-label" htmlFor="food-category">دسته‌بندی</label><select id="food-category" className="input select" value={category} onChange={(event) => setCategory(event.target.value as FoodCategory)}>{FOOD_CATEGORIES.map((item) => <option key={item} value={item}>{foodLabels[item]}</option>)}</select></div>
